@@ -1,7 +1,13 @@
-import React from 'react'
+import { Layout } from "antd";
+import { HeaderMenu } from "../../components";
+
+const {Content} = Layout;
 
 export function Students() {
   return (
-    <div>students</div>
+    <Layout>
+      <HeaderMenu page="students"/>
+      <Content>Students</Content>
+    </Layout>
   )
 }

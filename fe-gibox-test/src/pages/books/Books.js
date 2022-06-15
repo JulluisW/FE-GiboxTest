@@ -1,7 +1,14 @@
-import React from 'react'
+import { Layout } from "antd";
+import { HeaderMenu } from "../../components";
+
+const {Content} = Layout;
 
 export function Books() {
+
   return (
-    <div>books</div>
-  )
+    <Layout>
+      <HeaderMenu page="books" />
+      <Content>Books</Content>
+    </Layout>
+  );
 }

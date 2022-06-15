@@ -1,7 +1,13 @@
-import React from 'react'
+import { Layout } from "antd";
+import { HeaderMenu } from "../../components";
+
+const {Content} = Layout;
 
 export function Rent() {
   return (
-    <div>Rent</div>
+    <Layout>
+      <HeaderMenu page="rent" />
+      <Content>Rent</Content>
+    </Layout>
   )
 }

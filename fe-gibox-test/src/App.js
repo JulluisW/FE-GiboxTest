@@ -1,7 +1,9 @@
-import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Login, Books, Notfound, Rent, Students } from "./pages";
 import { ProtectedRoutes } from "./ProtectedRoutes";
+
+import 'antd/dist/antd.css';
+import "./App.scss";
 
 function App() {
   return (
