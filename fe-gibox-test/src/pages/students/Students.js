@@ -1,13 +1,18 @@
+import { Table } from "antd";
 import { Layout } from "antd";
-import { HeaderMenu } from "../../components";
-
-const {Content} = Layout;
+import { useState } from "react";
+import { HeaderMenu, MainSection } from "../../components";
+import { tableColumns, pageTitle } from "./constants";
 
 export function Students() {
+  const [students, setStudents] = useState('')
+
   return (
     <Layout>
       <HeaderMenu page="students"/>
-      <Content>Students</Content>
+      <MainSection title={pageTitle} >
+        <Table columns={tableColumns} />
+      </MainSection>
     </Layout>
   )
 }
