@@ -56,64 +56,64 @@
     }
   ],
   "students": [
-    {  
+    {
       "id": 1,
       "name": "Mark",
       "class": "6A"
     },
-    {  
+    {
       "id": 2,
       "name": "Sisca",
       "class": "4C"
     },
-    {  
+    {
       "id": 3,
       "name": "Bima",
       "class": "4A"
     },
-    {  
+    {
       "id": 4,
       "name": "Tony",
       "class": "1A"
     },
-    {  
+    {
       "id": 5,
       "name": "Sano",
       "class": "6D"
     },
-    {  
+    {
       "id": 6,
       "name": "Susano",
       "class": "5C"
     },
-    {  
+    {
       "id": 7,
       "name": "Sidarta",
       "class": "3A"
     },
-    {  
+    {
       "id": 7,
       "name": "Sidarta",
       "class": "3A"
     },
-    {  
+    {
       "id": 8,
       "name": "Angela",
       "class": "2B"
     },
-    {  
+    {
       "id": 9,
       "name": "Jarjit",
       "class": "2B"
     },
-    {  
+    {
       "id": 10,
       "name": "Kumala",
       "class": "1F"
     }
   ],
   "rent_transactions": [
-    {  
+    {
       "id": 1,
       "studentId": "2",
       "bookId": "1",
@@ -121,7 +121,7 @@
       "returnDueDate": "2020-06-05",
       "status": "active"
     },
-    {  
+    {
       "id": 2,
       "studentId": "4",
       "bookId": "4",
@@ -129,6 +129,5 @@
       "returnDueDate": "2020-06-12",
       "status": "done"
     }
-
   ]
 }
