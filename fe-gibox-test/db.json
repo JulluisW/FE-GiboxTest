@@ -1,0 +1,134 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "email": "luis@mail.com",
+      "password": "12345678",
+      "username": "julluis-wiputra"
+    },
+    {
+      "id": 2,
+      "email": "mary@mail.com",
+      "password": "12345678",
+      "username": "mary-munarman"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "Happy Potter",
+      "year": "2002",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quisquam vitae reiciendis rerum omnis quibusdam minima voluptatum sit deleniti dolorem optio harum obcaecati doloribus dolorum quis iure praesentium? Iure veniam tenetur possimus. Expedita praesentium dolore cupiditate maiores illum eaque rerum, recusandae ratione harum ipsum alias sapiente nemo atque, incidunt ducimus aliquid quibusdam beatae! Eveniet saepe quasi repellendus velit cupiditate ducimus doloribus iste sequi asperiores aliquam corrupti id optio aperiam eaque odit, amet aut provident at est, ex laudantium non quidem ipsum. Reprehenderit, adipisci? Soluta hic aperiam adipisci natus dignissimos rem, neque, corporis beatae, dicta quae facere quibusdam ratione error assumenda!",
+      "imgUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "name": "Goose",
+      "year": "2012",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quisquam vitae reiciendis rerum omnis quibusdam minima voluptatum sit deleniti dolorem optio harum obcaecati doloribus dolorum quis iure praesentium? Iure veniam tenetur possimus. Expedita praesentium dolore cupiditate maiores illum eaque rerum, recusandae ratione harum ipsum alias sapiente nemo atque, incidunt ducimus aliquid quibusdam beatae! Eveniet saepe quasi repellendus velit cupiditate ducimus doloribus iste sequi asperiores aliquam corrupti id optio aperiam eaque odit, amet aut provident at est, ex laudantium non quidem ipsum. Reprehenderit, adipisci? Soluta hic aperiam adipisci natus dignissimos rem, neque, corporis beatae, dicta quae facere quibusdam ratione error assumenda!",
+      "imgUrl": "https://www.gooseandfriends.com/media/images/large/products_438_goose-audio-book-with-cd_0.jpg",
+      "authorId": 2
+    },
+    {
+      "id": 3,
+      "name": "Panda & Dragon",
+      "year": "2013",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quisquam vitae reiciendis rerum omnis quibusdam minima voluptatum sit deleniti dolorem optio harum obcaecati doloribus dolorum quis iure praesentium? Iure veniam tenetur possimus. Expedita praesentium dolore cupiditate maiores illum eaque rerum, recusandae ratione harum ipsum alias sapiente nemo atque, incidunt ducimus aliquid quibusdam beatae! Eveniet saepe quasi repellendus velit cupiditate ducimus doloribus iste sequi asperiores aliquam corrupti id optio aperiam eaque odit, amet aut provident at est, ex laudantium non quidem ipsum. Reprehenderit, adipisci? Soluta hic aperiam adipisci natus dignissimos rem, neque, corporis beatae, dicta quae facere quibusdam ratione error assumenda!",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/61Y8CCRZEZL.jpg",
+      "authorId": 1
+    },
+    {
+      "id": 4,
+      "name": "Unknown(?)",
+      "year": "1990",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quisquam vitae reiciendis rerum omnis quibusdam minima voluptatum sit deleniti dolorem optio harum obcaecati doloribus dolorum quis iure praesentium? Iure veniam tenetur possimus. Expedita praesentium dolore cupiditate maiores illum eaque rerum, recusandae ratione harum ipsum alias sapiente nemo atque, incidunt ducimus aliquid quibusdam beatae! Eveniet saepe quasi repellendus velit cupiditate ducimus doloribus iste sequi asperiores aliquam corrupti id optio aperiam eaque odit, amet aut provident at est, ex laudantium non quidem ipsum. Reprehenderit, adipisci? Soluta hic aperiam adipisci natus dignissimos rem, neque, corporis beatae, dicta quae facere quibusdam ratione error assumenda!",
+      "imgUrl": "https://www.ubuy.co.id/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvMzFsN0NmdXE4b0wuanBn.jpg",
+      "authorId": 2
+    },
+    {
+      "id": 5,
+      "name": "Titans (Unleashed)",
+      "year": "2020",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quisquam vitae reiciendis rerum omnis quibusdam minima voluptatum sit deleniti dolorem optio harum obcaecati doloribus dolorum quis iure praesentium? Iure veniam tenetur possimus. Expedita praesentium dolore cupiditate maiores illum eaque rerum, recusandae ratione harum ipsum alias sapiente nemo atque, incidunt ducimus aliquid quibusdam beatae! Eveniet saepe quasi repellendus velit cupiditate ducimus doloribus iste sequi asperiores aliquam corrupti id optio aperiam eaque odit, amet aut provident at est, ex laudantium non quidem ipsum. Reprehenderit, adipisci? Soluta hic aperiam adipisci natus dignissimos rem, neque, corporis beatae, dicta quae facere quibusdam ratione error assumenda!",
+      "imgUrl": "https://m.media-amazon.com/images/I/41Q48ZA3SCL.jpg",
+      "authorId": 1
+    }
+  ],
+  "students": [
+    {  
+      "id": 1,
+      "name": "Mark",
+      "class": "6A"
+    },
+    {  
+      "id": 2,
+      "name": "Sisca",
+      "class": "4C"
+    },
+    {  
+      "id": 3,
+      "name": "Bima",
+      "class": "4A"
+    },
+    {  
+      "id": 4,
+      "name": "Tony",
+      "class": "1A"
+    },
+    {  
+      "id": 5,
+      "name": "Sano",
+      "class": "6D"
+    },
+    {  
+      "id": 6,
+      "name": "Susano",
+      "class": "5C"
+    },
+    {  
+      "id": 7,
+      "name": "Sidarta",
+      "class": "3A"
+    },
+    {  
+      "id": 7,
+      "name": "Sidarta",
+      "class": "3A"
+    },
+    {  
+      "id": 8,
+      "name": "Angela",
+      "class": "2B"
+    },
+    {  
+      "id": 9,
+      "name": "Jarjit",
+      "class": "2B"
+    },
+    {  
+      "id": 10,
+      "name": "Kumala",
+      "class": "1F"
+    }
+  ],
+  "rent_transactions": [
+    {  
+      "id": 1,
+      "studentId": "2",
+      "bookId": "1",
+      "rentDate": "2020-06-01",
+      "returnDueDate": "2020-06-05",
+      "status": "active"
+    },
+    {  
+      "id": 2,
+      "studentId": "4",
+      "bookId": "4",
+      "rentDate": "2020-06-06",
+      "returnDueDate": "2020-06-12",
+      "status": "done"
+    }
+
+  ]
+}
