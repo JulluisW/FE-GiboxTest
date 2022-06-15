@@ -112,16 +112,16 @@
       "id": 1,
       "studentId": "2",
       "bookId": "1",
-      "rentDate": "2020-06-01",
-      "returnDueDate": "2020-06-05",
+      "rentDate": "2022-06-01",
+      "returnDueDate": "2022-06-05",
       "status": "active"
     },
     {
       "id": 2,
       "studentId": "4",
       "bookId": "4",
-      "rentDate": "2020-06-06",
-      "returnDueDate": "2020-06-12",
+      "rentDate": "2022-06-06",
+      "returnDueDate": "2022-06-12",
       "status": "done"
     }
   ]

@@ -8,7 +8,7 @@ import { useTableColumns } from "./hooks/useTableColumns";
 
 export function Books() {
   const [books, setBooks] = useState([]);
-  const [selectedBook, setSelectedBook] = useState({ name: "hahaha" });
+  const [selectedBook, setSelectedBook] = useState({});
   const [visible, setVisible] = useState(false);
 
   const fetchAllBooks = async () => {
