@@ -1,52 +1,42 @@
-import { Space, Tag } from 'antd';
+import { Space } from 'antd';
 
 export const pageTitle = 'Book List'
 
 export const tableColumns = [
   {
+    title: 'No',
+    key: 'index',
+    width: 50,
+    render: (text="", record="", index) => <>{index+1}</>,
+  },
+  {
     title: 'Title',
     dataIndex: 'name',
     key: 'name',
-    render: (text) => <a>{text}</a>,
   },
   {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
+    title: 'Cover Image',
+    dataIndex: 'imgUrl',
+    key: 'imgUrl',
+    render: (imgUrl, record) => <img style={{width:'100px', height:'150px', objectFit:'cover'}} src={imgUrl} alt={record.name}/>
   },
   {
-    title: 'Address',
-    dataIndex: 'address',
-    key: 'address',
+    title: 'Released Year',
+    dataIndex: 'year',
+    key: 'year',
   },
   {
-    title: 'Tags',
-    key: 'tags',
-    dataIndex: 'tags',
-    render: (_, { tags }) => (
-      <>
-        {tags.map((tag) => {
-          let color = tag.length > 5 ? 'geekblue' : 'green';
-
-          if (tag === 'loser') {
-            color = 'volcano';
-          }
-
-          return (
-            <Tag color={color} key={tag}>
-              {tag.toUpperCase()}
-            </Tag>
-          );
-        })}
-      </>
-    ),
+    title: 'Description',
+    dataIndex: 'description',
+    key: 'description',
+    render: (description) => <p style={{maxWidth:'60ch'}}>{description}</p>
   },
   {
     title: 'Action',
     key: 'action',
     render: (_, record) => (
       <Space size="middle">
-        <a>Invite {record.name}</a>
+        <a>Edit</a>
         <a>Delete</a>
       </Space>
     ),

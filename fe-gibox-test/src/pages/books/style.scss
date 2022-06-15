@@ -1,0 +1,12 @@
+.form {
+  &-wrapper {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  &-container {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+}
