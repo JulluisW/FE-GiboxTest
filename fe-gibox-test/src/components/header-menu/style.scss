@@ -1,0 +1,10 @@
+.main {
+  &-header {
+    background-color: white !important;
+  }
+  &-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
