@@ -1,12 +1,10 @@
-import { Table } from "antd";
-import { Layout } from "antd";
+import { Layout, Table, Modal } from "antd";
 import { useEffect, useState } from "react";
 import { HeaderMenu, MainSection } from "../../components";
 import { pageTitle } from "./constants";
 import "./style.scss";
 import api from "../../api/api";
 import { useTableColumns } from "./hooks/useTableColumns";
-import { Modal } from "antd";
 
 export function Books() {
   const [books, setBooks] = useState([]);
