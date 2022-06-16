@@ -7,7 +7,7 @@ import api from "../../api/api";
 import { useTableColumns } from "./hooks/useTableColumns";
 
 export function Students() {
-  const [students, setStudents] = useState("");
+  const [students, setStudents] = useState([]);
   const [visible, setVisible] = useState(false)
   const [selectedStudent, setSelectedStudent] = useState({})
 
@@ -56,7 +56,7 @@ export function Students() {
       <MainSection title={pageTitle}>
         <Table columns={tableColumns} rowKey="id" dataSource={students} />
       </MainSection>
-      <Modal title="Edit Book" visible={visible} onOk={() => handleEditStudent(selectedStudent.id, selectedStudent)} onCancel={() => setVisible(false)} centered>
+      <Modal title="Edit Student" visible={visible} onOk={() => handleEditStudent(selectedStudent.id, selectedStudent)} onCancel={() => setVisible(false)} centered>
         <div className="form-container">
           <div className="form-wrapper">
             <label>Student Name</label>

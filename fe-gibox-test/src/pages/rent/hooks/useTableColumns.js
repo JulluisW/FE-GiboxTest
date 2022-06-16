@@ -3,20 +3,43 @@ import { Space } from "antd";
 import { identity } from "lodash-es";
 import api from "../../../api/api.js";
 
-const getStudentName = async (id) => {
-  const { data } = await api.get(`/students/${id}`);
-  return data.name;
+let students = [];
+let books = [];
+
+const getStudentNames = async () => {
+  try {
+    const { data } = await api.get(`/students`);
+    students = data;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-const dayDiff = (date_1) =>{
-  let difference = new Date() - new Date(date_1);
-  let TotalDays = Math.ceil(+difference / (1000 * 3600 * 24));
-  return TotalDays;
-}
+const getBookNames = async () => {
+  try {
+    const { data } = await api.get(`/books`);
+    books = data;
+  } catch (error) {
+    console.log(error);
+  }
+};
 
-const CurrencyFormatter = new Intl.NumberFormat('id-ID', {
-  style: 'currency',
-  currency: 'IDR',
+getStudentNames();
+getBookNames();
+
+const dayDiff = (date_1) => {
+  let difference = new Date() - new Date(date_1);
+  let TotalDays = Math.ceil((+difference - 3) / (1000 * 3600 * 24));
+  if (TotalDays < 0) {
+    return 0;
+  } else {
+    return TotalDays;
+  }
+};
+
+const CurrencyFormatter = new Intl.NumberFormat("id-ID", {
+  style: "currency",
+  currency: "IDR",
 });
 
 export function useTableColumns({ onClickEdit = identity, onClickDelete = identity }) {
@@ -29,28 +52,35 @@ export function useTableColumns({ onClickEdit = identity, onClickDelete = identi
       align: "center",
     },
     {
-      title: "Student Id",
+      title: "Student",
       dataIndex: "studentId",
       key: "student",
       align: "center",
-      // render: (id) => {
-      //   let name = "";
-      //   getStudentName(id)
-      //     .then((res) => {
-      //       name = res;
-      //       return null;
-      //     })
-      //     .catch((err) => console.log(err));
-      //   return (
-      //     <p>{name}</p>
-      //   )
-      // },
+      render: (id) => {
+        // eslint-disable-next-line array-callback-return
+        const student = students.filter((el) => {
+          if (+el.id === +id) {
+            return el;
+          }
+        });
+        return <p>{student[0]?.name}</p>;
+      },
     },
+
     {
-      title: "Book Id",
+      title: "Book",
       dataIndex: "bookId",
       key: "bookId",
       align: "center",
+      render: (id) => {
+        // eslint-disable-next-line array-callback-return
+        const book = books.filter((el) => {
+          if (+el.id === +id) {
+            return el;
+          }
+        });
+        return <p>{book[0]?.name}</p>;
+      },
     },
     {
       title: "Rent Date",
@@ -68,9 +98,7 @@ export function useTableColumns({ onClickEdit = identity, onClickDelete = identi
       title: "Penalty",
       key: "penalty",
       align: "center",
-      render: (_,record) => (
-        <p>{CurrencyFormatter.format(dayDiff(record.returnDueDate) * 5000)}</p>
-      )
+      render: (_, record) => <p>{CurrencyFormatter.format(dayDiff(record.returnDueDate) * 5000)}</p>,
     },
     {
       title: "Action",

@@ -1,0 +1,23 @@
+#add-button {
+  position: sticky;
+  margin: 20px auto;
+  font-size: 0.9rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.25em 1.5em;
+  background-color: rgb(67, 102, 199);
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+
+  &:hover{
+    background-color: rgb(87, 120, 209);
+  }
+  &:active {
+    background-color: rgb(67, 102, 199);
+  }
+}
+
+#rent-page {
+  position: relative !important;
+}
