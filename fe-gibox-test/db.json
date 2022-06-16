@@ -135,13 +135,6 @@
       "bookId": "2",
       "rentDate": "2022-06-06",
       "returnDueDate": "2022-06-20"
-    },
-    {
-      "studentId": "2",
-      "bookId": "4",
-      "rentDate": "2022-06-16",
-      "returnDueDate": "2022-06-24",
-      "id": 5
     }
   ]
 }

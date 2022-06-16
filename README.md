@@ -12,8 +12,6 @@ Frontend Test for Gibox
 - cd fe-gibox-test
 - npm start
 
-
-# Unfinished Features
-- Login Page
-- Notification Page
-- Rent Transaction Create & Update
+# Login Account
+Email : luis@mail.com
+Password: 12345678
